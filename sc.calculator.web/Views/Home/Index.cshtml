@@ -3,47 +3,94 @@
 }
 
 <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-offset-3">
+        <div class="row"></div>
+    </div>
+
+    <div class="col-md-6">
         <div ng-controller="AppController">
-            <h1>{{Result || 0}} {{Operator}}</h1>
 
-            <h4>{{Negative ? '-' : ''}} {{Operand || 0}}</h4>
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>{{Result || 0}} {{Operator}}</h1>
+                    <h4>{{Negative ? '-' : ''}} {{Operand || 0}}</h4>
+                </div>
+            </div>
 
-            <button class="btn btn-primary" ng-click="SetOperator('+')">+</button>
-            <button class="btn btn-primary" ng-click="SetOperator('-')">-</button>
-            <button class="btn btn-primary" ng-click="SetOperator('*')">*</button>
-            <button class="btn btn-primary" ng-click="SetOperator('/')">/</button>
-            <button class="btn btn-primary" ng-click="Calculate()">=</button>
-
-            <br />
-
-            <button class="btn btn-primary" ng-click="Append('9')">9</button>
-            <button class="btn btn-primary" ng-click="Append('8')">8</button>
-            <button class="btn btn-primary" ng-click="Append('7')">7</button>
-
-            <br />
-
-            <button class="btn btn-primary" ng-click="Append('6')">6</button>
-            <button class="btn btn-primary" ng-click="Append('5')">5</button>
-            <button class="btn btn-primary" ng-click="Append('4')">4</button>
-
-            <br />
-
-            <button class="btn btn-primary" ng-click="Append('3')">3</button>
-            <button class="btn btn-primary" ng-click="Append('2')">2</button>
-            <button class="btn btn-primary" ng-click="Append('1')">1</button>
-
-            <br />
-
-            <button class="btn btn-primary" ng-click="Append('0')">0</button>
-            <button class="btn btn-primary" ng-click="AppendDecimal()">.</button>
-            <button class="btn btn-primary" ng-click="Negate()">-</button>
-
-            <br />
-
-            <button class="btn btn-primary" ng-click="Backspace()">BS</button>
-            <button class="btn btn-primary" ng-click="Clear()">C</button>
-            <button class="btn btn-primary" ng-click="ClearEverything()">CE</button>
+            <div class="row">
+                <div class="col-md-2">
+                    <button class="btn btn-primary" ng-click="SetOperator('+')">+</button>
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-primary" ng-click="SetOperator('-')">-</button>
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-primary" ng-click="SetOperator('*')">*</button>
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-primary" ng-click="SetOperator('/')">/</button>
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-primary" ng-click="Calculate()">=</button>
+                </div>
+            </div>
+            <div class="row">
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <button class="btn btn-primary" ng-click="Append('9')">9</button>
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-primary" ng-click="Append('8')">8</button>
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-primary" ng-click="Append('7')">7</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <button class="btn btn-primary" ng-click="Append('6')">6</button>
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-primary" ng-click="Append('5')">5</button>
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-primary" ng-click="Append('4')">4</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <button class="btn btn-primary" ng-click="Append('3')">3</button>
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-primary" ng-click="Append('2')">2</button>
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-primary" ng-click="Append('1')">1</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <button class="btn btn-primary" ng-click="Append('0')">0</button>
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-primary" ng-click="AppendDecimal()">.</button>
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-primary" ng-click="Negate()">-</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <button class="btn btn-primary" ng-click="Backspace()">BS</button>
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-primary" ng-click="Clear()">C</button>
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-primary" ng-click="ClearEverything()">CE</button>
+                </div>
+            </div>
         </div>
     </div>
 </div>
